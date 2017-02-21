@@ -21,7 +21,8 @@ for depart in departs:
     if departs[depart]["child"] is None:
         continue
     for subject in departs[depart]["child"]:
-        name = subject[-2]
+        subject.append(depart)
+        name = subject[4]
         if name in profs_subjects:
             profs_subjects[name]["과목"].append(subject)
 
