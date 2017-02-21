@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 
 # 브라우저 세팅
@@ -34,5 +35,8 @@ browser.implicitly_wait(1)
 # HTML로 추출
 html = browser.page_source
 html = html.replace("euc-kr", "utf-8")
-with open("./output/best_professor.html", mode="w", encoding="utf-8") as fp:
+path = "./output"
+if not os.path.exists(path):
+    os.makedirs(path)
+with open(path + "/best_professor.html", mode="w", encoding="utf-8") as fp:
     fp.write(html)
