@@ -1,4 +1,29 @@
 ﻿#table_seoul > tbody > tr:nth-child(2) > th:nth-child(1)
+<tr>
+            <td>1</td>
+            <td>디자인학부</td>
+            <td>회화과</td>            
+   
+            <td>전기</td>
+   
+            <td>400101-12</td>
+
+            <td class="list_subject"><a href="javascript:MM_openBrWindow('./cn1306.jsp?yy=2017&amp;hakgi=1&amp;haksu=400101&amp;bunban=12','syllabus','width=800,height=800,scrollbars=yes,resizable=no');">기초평면(1)<font color="red">(*)</font></a></td> 
+
+            <td>3</td>
+            <td>0/0/0/30/32</td>
+            <td>0</td>
+            <td>10</td>
+            <td>전체</td>
+            <td>Lee Marvin Jin</td>
+            <td>화123</td>
+           <!-- <td>R716</td>-->
+            <td>시디1학년 I반외수강금지&nbsp;</td>            
+        </tr>
+필요항목 : 개설학년, 개설학과, 학수번호, 과목명, 교수명, 요일및시간
+th가 14일 때 : 0 1 4 5 11 12
+th가 15일 때 : 0 1 5 6 12 13
+
 
 자연계열 javascript:gocn4001(1,1,'0001',3)
 p_yy:2017
