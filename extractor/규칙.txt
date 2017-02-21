@@ -1,0 +1,34 @@
+﻿#table_seoul > tbody > tr:nth-child(2) > th:nth-child(1)
+
+자연계열 javascript:gocn4001(1,1,'0001',3)
+p_yy:2017
+p_hakgi:1
+p_campus:1
+p_gubun:1
+p_dept:0001
+p_grade:3
+p_abeek:1
+p_2014:2014
+p_2016:on
+
+정보컴퓨터공학부 javascript:gocn4001(1,2,'A150',0)
+p_yy:2017
+p_hakgi:1
+p_campus:1
+p_gubun:2
+p_dept:A150
+p_grade:0
+p_abeek:1
+p_2014:2014
+p_2016:on
+
+디자인학부javascript:gocn4001(1,2,'F170',0)
+p_yy:2017
+p_hakgi:1
+p_campus:1
+p_gubun:2
+p_dept:F170
+p_grade:0
+p_abeek:1
+p_2014:2014
+p_2016:on
