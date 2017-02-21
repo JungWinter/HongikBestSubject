@@ -119,7 +119,7 @@ def _fill_subject_padding(subject):
     return subject
 
 
-def save():
+def _extract():
     # phase 1
     url = "http://sugang.hongik.ac.kr/cn4000.jsp"
     payload = _set_payload(1)
@@ -155,10 +155,9 @@ def save():
         print("%d/%d processing" % (i+1, len(sub)))
         time.sleep(0.5)
 
-    path = "./output"
-    if not os.path.exists(path):
-        os.makedirs(path)
-    with open(path + "/all_subject_output.txt", mode="w") as fp:
+    if not os.path.exists("./output"):
+        os.makedirs("./output")
+    with open("./output/all_subject_output.txt", mode="w") as fp:
         json.dump(sub, fp)
     return None
 
@@ -174,8 +173,8 @@ def load():
 if __name__ == "__main__":
     sub = load()
     if sub is None:
-        save()
+        _extract()
         sub = load()
-    import pprint
-    pprint.pprint(sub["법학과"])
-    pprint.pprint(sub["사대공통"])
+    from pprint import pprint
+    pprint(sub["법학과"])
+    pprint(sub["사대공통"])
