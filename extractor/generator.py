@@ -40,20 +40,7 @@ source = '''
             </tbody>
         </table>
 
-    <!-- Google Analytics -->
-	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-89592553-1', 'auto');
-		ga('send', 'pageview', {
-		  'page': '/project/best_subject',
-		  'title': '2017년 1학기 우수 강사별 과목 조회 시스템'
-		});
-	</script>
-	<!-- End Google Analytics -->
+    {}
     </body>
 </html>
 '''
@@ -76,7 +63,22 @@ template_subjects = '''
                     <td>{}</td>
                 </tr>
 '''
+google = '''
+<!-- Google Analytics -->
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+		ga('create', 'UA-89592553-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/project/best_subject',
+		  'title': '2017년 1학기 우수 강사별 과목 조회 시스템'
+		});
+	</script>
+	<!-- End Google Analytics -->
+'''
 source_body = ""
 for name in tree:
     subjects = tree[name]["과목"]
@@ -105,6 +107,6 @@ for name in tree:
         source_subjects
     )
 
-final_source = source.format(source_body)
+final_source = source.format(source_body, google)
 with open("./output/result.html", mode="w", encoding="utf-8") as fp:
     fp.write(final_source)
