@@ -30,8 +30,8 @@ def _save():
     browser.implicitly_wait(1)
 
     # 2016년 2학기 우수 강사 조회
-    browser.find_element_by_xpath("//select[@name='p_yy']/option[text()='2016']").click()
-    browser.find_element_by_xpath("//select[@name='p_hakgi']/option[@value='2']").click()
+    browser.find_element_by_xpath("//select[@name='p_yy']/option[text()='2017']").click()
+    browser.find_element_by_xpath("//select[@name='p_hakgi']/option[@value='1']").click()
     browser.find_element_by_xpath("//input[@type='submit' and @value='검색']").click()
     browser.implicitly_wait(1)
 

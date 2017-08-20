@@ -10,9 +10,9 @@ source = '''
         <link href="best_subject.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <h1>2017년 1학기 우수 강사별 과목 조회 시스템</h1>
+        <h1>2017년 2학기 우수 강사별 과목 조회 시스템</h1>
         <p>
-            2017년 2월 22일 0시 생성<br />
+            2017년 8월 20일 0시 생성<br />
             <a href="http://winterj.me">정겨울</a><br />
             <a href="https://github.com/JungWinter/HongikBestSubject">Github repo</a><br />
         </p>
@@ -74,7 +74,7 @@ google = '''
 		ga('create', 'UA-89592553-1', 'auto');
 		ga('send', 'pageview', {
 		  'page': '/project/best_subject',
-		  'title': '2017년 1학기 우수 강사별 과목 조회 시스템'
+		  'title': '2017년 2학기 우수 강사별 과목 조회 시스템'
 		});
 	</script>
 	<!-- End Google Analytics -->
